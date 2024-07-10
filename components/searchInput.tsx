@@ -14,7 +14,7 @@ export default function SearchInput() {
 
   return (
     <Input
-      type="text"
+      type="search"
       placeholder="Search..."
       onKeyDown={(e) => e.key === 'Enter' && redirectToSearch(e.currentTarget.value)}
       id="search"

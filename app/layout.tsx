@@ -25,6 +25,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
+          themes={["light", "dark", "mocha"]}
         >
           <div className="flex flex-col min-h-screen">
             <div className="flex-1 content-center">
