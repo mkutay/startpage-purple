@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn(
-        "bg-purple font-sans antialiased",
+        "bg-background font-sans antialiased",
         fontSans.variable
       )}>
         <ThemeProvider

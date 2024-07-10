@@ -9,10 +9,11 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 export function MyCard({ title, className }: { title: string, className: string }) {
   return (
-    <Card className={className}>
+    <Card className={cn(className, "bg-secondary shadow-lg")}>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
