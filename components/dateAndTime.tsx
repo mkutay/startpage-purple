@@ -10,11 +10,6 @@ export default function DateAndTime() {
     setDate(now);
   };
 
-  const convertSeconds = () => {
-    const seconds = date.getSeconds();
-    return seconds;
-  };
-
   setInterval(setSetDate, 400);
 
   return (
@@ -47,7 +42,7 @@ export default function DateAndTime() {
         :
       </span>
       <span suppressHydrationWarning>
-        {~~(convertSeconds() / 10) == 0 ? `0${convertSeconds()}` : convertSeconds()}
+        {~~(date.getSeconds() / 10) == 0 ? `0${date.getSeconds()}` : date.getSeconds()}
       </span>
     </span>
   );
