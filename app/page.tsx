@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="my-8 flex flex-col">
       <div className="flex flex-col gap-4 max-w-6xl mx-auto">
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-5 gap-4 grow">
           <MyCard title="YouTube" className="grow col-span-2"/>
           <div className="grid gap-4 grid-rows-2">
             <MyCard title="Reddita" className="grow"/>
