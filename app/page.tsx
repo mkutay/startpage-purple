@@ -13,14 +13,14 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="my-8 flex flex-col gap-4 max-w-6xl mx-auto">
-      <div className="grid grid-cols-9 gap-4">
-        <Card className="shadow-lg grow col-span-4">
+    <main className="my-8 flex flex-col gap-4 lg:max-w-6xl mx-auto max-w-xs">
+      <div className="grid gap-4 lg:grid-cols-9 lg:grid-rows-none grid-rows-9">
+        <Card className="shadow-lg grow lg:col-span-4 lg:row-span-1 row-span-4">
           <CardHeader>
             <CardTitle>To Do List</CardTitle>
           </CardHeader>
         </Card>
-        <div className="grid gap-4 grid-rows-2 col-span-2">
+        <div className="grid gap-4 lg:grid-rows-2 lg:col-span-2 lg:row-span-1 lg:grid-cols-none row-span-2 grid-cols-2">
           <Card className="shadow-lg grow">
             <CardHeader>
               <CardTitle>Reddit</CardTitle>
@@ -32,7 +32,7 @@ export default function Home() {
             </CardHeader>
           </Card>
         </div>
-        <div className="grid gap-4 grid-rows-2 col-span-2">
+        <div className="grid gap-4 lg:grid-rows-2 lg:col-span-2 lg:grid-cols-none lg:row-span-1 grid-cols-2 row-span-2">
           <Card className="shadow-lg grow">
             <CardHeader>
               <CardTitle>Reddit</CardTitle>
@@ -44,7 +44,7 @@ export default function Home() {
             </CardHeader>
           </Card>
         </div>
-        <div className="grid gap-4 grid-rows-4">
+        <div className="grid gap-4 lg:grid-rows-4 grid-cols-4 lg:grid-cols-none">
           <Link href="https://youtube.com">
             <Card className="shadow-lg grow hover:bg-accent transition-colors duration-400">
               <CardHeader>
@@ -83,11 +83,11 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-row gap-4 items-center grow">
-        <div className="mr-auto">
+      <div className="flex lg:flex-row flex-col gap-4 lg:items-center grow">
+        <div className="lg:mr-auto mx-auto">
           <DateAndTime/>
         </div>
-        <div className="ml-auto grow">
+        <div className="lg:ml-auto grow">
           <SearchInput/>
         </div>
       </div>
